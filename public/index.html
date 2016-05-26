@@ -3,17 +3,17 @@
     <head>
         <!-- Set the adblock variable to true -->
         <script type="text/javascript">
-            var adblock = true;
+            var usingAdblock = true;
         </script>
         <!-- If adblock doesn't block the fake ad script, set adblock to false -->
         <script type="text/javascript" src="adframe.js"></script>
         <!-- Check to see if adblock was set to false -->
         <script type="text/javascript">
             var test = document.createElement('div');
-            if (adblock) {
+            if (usingAdblock) {
                 test.innerHTML = 'You ARE using an ad blocker';
             } else {
-                test.innerHTML = 'You ARE NOT using an ad blocker.';
+                test.innerHTML = 'You ARE NOT using an ad blocker';
             }
         </script>
     </head>
