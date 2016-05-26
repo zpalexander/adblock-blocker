@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- Set the adblock variable to true -->
+        <script type="text/javascript">
+            var adblock = true;
+        </script>
+        <!-- If adblock doesn't block the fake ad script, set adblock to false -->
+        <script type="text/javascript" src="adframe.js"></script>
+        <!-- Check to see if adblock was set to false -->
+        <script type="text/javascript">
+            var test = document.createElement('div');
+            if (adblock) {
+                test.innerHTML = 'You ARE using an ad blocker';
+            } else {
+                test.innerHTML = 'You ARE NOT using an ad blocker.';
+            }
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            document.body.appendChild(test);
+        </script>
+    </body>
+</html>
